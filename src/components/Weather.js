@@ -4,7 +4,7 @@ const Weather = props => {
     return (
       <div className="main">
         <h1>
-          Weather in {/* {props.city}, {props.country} */}
+          Weather in {props.city}, {props.country}
         </h1>
        
         <p>
