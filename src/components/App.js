@@ -12,12 +12,12 @@ let apiUrl =
     apiKey
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
+  state = {
       wind: null,
+      temp: null,
       humidity: null,
+      temp_min: null,
+      temp_max: null,
       timestamp: null,
       city: null,
       country: null
@@ -35,7 +35,10 @@ fetchWeatherData = () => {
     .then(data => {
       this.setState({
         wind: data.wind.speed,
+        temp: data.main.temp,
         humidity: data.main.humidity,
+        temp_min: data.main.temp_min,
+        temp_max: data.max.temp_max,
         timestamp: timestamp("HH:mm:ss"),
         city: data.name,
         country: data.sys.country
@@ -59,7 +62,10 @@ fetchWeatherData = () => {
         <Header />
         <Weather 
           wind={this.state.wind}
+          temp={this.state.temp}
           humidity={this.state.humidity}
+          temp_min={this.state.temp_min}
+          temp_max={this.state.temp_max}
           timestamp={this.state.timestamp}
           city={this.state.city}
           country={this.state.country}
