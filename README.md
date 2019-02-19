@@ -1,4 +1,4 @@
-#A weather app that uses OpenWeatherAPI
+# A weather app that uses OpenWeatherAPI
 The app shows data relevant for Copenhagen, Denmark.
 
 Learning objectives:

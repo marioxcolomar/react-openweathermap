@@ -1,10 +1,8 @@
 import React from 'react'
 
 const Header = (props) => {
-    return(
-        <div>
-            <h2>Hello Bioware!</h2>
-        </div>
+    return (
+        <h1>Weather in {props.city}, {props.country}</h1>
     )
 }
 
