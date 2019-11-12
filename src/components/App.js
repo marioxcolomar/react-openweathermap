@@ -5,6 +5,7 @@ import timestamp from 'time-stamp'
 //Components
 import Weather from './Weather'
 import Header from './Header';
+import Footer from './Footer'
 
 let apiKey = '254d2233a505bdf1e8e64ea5b4ed6538'
 let apiUrl =
@@ -58,16 +59,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header
-          city={this.state.city}
-          country={this.state.country}
-        />
-        <Weather
-          wind={this.state.wind}
-          temp={this.state.temp}
-          humidity={this.state.humidity}
-          temp_min={this.state.temp_min}
-          temp_max={this.state.temp_max}
+        <div className="main">
+          <Header
+            city={this.state.city}
+            country={this.state.country}
+          />
+          <Weather
+            wind={this.state.wind}
+            temp={this.state.temp}
+            humidity={this.state.humidity}
+            temp_min={this.state.temp_min}
+            temp_max={this.state.temp_max}
+          />
+        </div>
+
+        <Footer
           timestamp={this.state.timestamp}
         />
       </div>
