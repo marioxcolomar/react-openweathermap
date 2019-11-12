@@ -1,5 +1,24 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
   text-align: center;
   margin: auto;
-  max-width: 800px;;
+  max-width: 800px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  padding: 20px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.footer {
+  height: 40px;
+  margin-top: -40px;
 }
