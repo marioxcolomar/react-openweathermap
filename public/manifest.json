@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Weather in Copenhagen",
+  "name": "Weather in Copenhagen - OpenWeatherApi",
   "icons": [
     {
       "src": "favicon.ico",
