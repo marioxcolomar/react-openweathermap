@@ -1,6 +1,10 @@
 import React from 'react'
 
-const Footer = ({ timestamp }) => (
+interface Props {
+	timestamp: string;
+}
+
+const Footer: React.FC<Props> = ({ timestamp }) => (
 	<div className="footer">
 		<p><i>Last update: {timestamp}</i></p>
 	</div>
